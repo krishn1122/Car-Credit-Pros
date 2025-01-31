@@ -19,18 +19,18 @@ const Index = () => {
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-6xl font-bold text-secondary mb-6">
+            <h1 className="text-5xl md:text-6xl font-bold text-secondary mb-6 animate-fade-in">
               Drive Your Dream Car
               <span className="text-primary block mt-2">
                 No Matter Your Credit
               </span>
             </h1>
-            <p className="text-xl text-secondary/90 mb-8">
+            <p className="text-xl text-secondary/90 mb-8 animate-slide-up">
               We specialize in helping customers with all types of credit histories get behind the wheel of their perfect vehicle.
             </p>
             <Button
               asChild
-              className="bg-primary text-darker hover:bg-primary/90 text-lg px-8 py-6"
+              className="bg-primary text-secondary hover:bg-primary/90 text-lg px-8 py-6 animate-fade-in"
             >
               <Link to="/schedule">Schedule Your Visit</Link>
             </Button>
@@ -59,13 +59,13 @@ const Index = () => {
                 description: "Start building your credit history with our first-time buyer programs",
               },
             ].map((item) => (
-              <Card key={item.title} className="p-8 bg-white shadow-lg hover:shadow-xl transition-shadow">
+              <Card key={item.title} className="p-8 bg-white shadow-lg hover:shadow-xl transition-shadow animate-fade-in">
                 <h3 className="text-2xl font-bold text-primary mb-4">{item.title}</h3>
                 <p className="text-dark/80 mb-6">{item.description}</p>
                 <Button
                   asChild
                   variant="outline"
-                  className="w-full hover:bg-primary hover:text-darker"
+                  className="w-full hover:bg-primary hover:text-secondary"
                 >
                   <Link to="/schedule">Learn More</Link>
                 </Button>
@@ -85,7 +85,7 @@ const Index = () => {
             </p>
             <Button
               asChild
-              className="bg-primary text-darker hover:bg-primary/90"
+              className="bg-primary text-secondary hover:bg-primary/90"
             >
               <Link to="/about" className="inline-flex items-center">
                 Read More <ArrowRight className="ml-2 h-4 w-4" />
@@ -106,7 +106,7 @@ const Index = () => {
           </p>
           <Button
             asChild
-            className="bg-primary text-darker hover:bg-primary/90 text-lg px-8 py-6"
+            className="bg-primary text-secondary hover:bg-primary/90 text-lg px-8 py-6"
           >
             <Link to="/schedule">Book Your Appointment Now</Link>
           </Button>

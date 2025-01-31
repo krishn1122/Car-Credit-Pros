@@ -19,16 +19,16 @@ export default {
     },
     extend: {
       colors: {
-        primary: "#FFBB3D",
-        secondary: "#FCFCFC",
-        dark: "#3A3A3A",
-        darker: "#000000",
+        primary: "#10B981", // Emerald green
+        secondary: "#FCFCFC", // White
+        dark: "#3A3A3A", // Grey
+        darker: "#000000", // Black
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        "primary-foreground": "#000000",
+        "primary-foreground": "#FFFFFF",
         "secondary-foreground": "#3A3A3A",
       },
       animation: {
