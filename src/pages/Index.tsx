@@ -11,7 +11,7 @@ const Index = () => {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-darker/80 to-darker/40" />
           <img
-            src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=2070&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070&auto=format&fit=crop"
             alt="White luxury car"
             className="w-full h-full object-cover"
           />
