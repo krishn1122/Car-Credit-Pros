@@ -42,7 +42,7 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-dark hover:text-primary transition-colors ${
+                className={`text-white hover:text-primary transition-colors ${
                   location.pathname === link.path ? "text-primary font-semibold" : ""
                 }`}
               >
@@ -59,7 +59,7 @@ const Navbar = () => {
 
           {/* Mobile Navigation Button */}
           <button
-            className="md:hidden text-dark"
+            className="md:hidden text-white"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
