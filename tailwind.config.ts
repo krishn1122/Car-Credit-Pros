@@ -12,17 +12,17 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: "1.5rem",
       screens: {
-        "2xl": "1400px",
+        "2xl": "1280px",
       },
     },
     extend: {
       colors: {
-        primary: "#FFBB3D", // Deep yellow
-        secondary: "#FCFCFC", // White
-        dark: "#3A3A3A", // Grey
-        darker: "#000000", // Black
+        primary: "#FFBB3D",
+        secondary: "#FCFCFC",
+        dark: "#3A3A3A",
+        darker: "#000000",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -30,6 +30,9 @@ export default {
         foreground: "hsl(var(--foreground))",
         "primary-foreground": "#000000",
         "secondary-foreground": "#3A3A3A",
+      },
+      fontFamily: {
+        jakarta: ["Plus Jakarta Sans", "sans-serif"],
       },
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out",

@@ -3,12 +3,12 @@ import { Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-darker text-secondary py-12">
-      <div className="container mx-auto px-4">
+    <footer className="bg-white text-dark py-12 border-t border-gray-100">
+      <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold text-primary mb-4">Car Credit Pros</h3>
-            <p className="text-secondary/80">
+            <p className="text-dark/80">
               Making car ownership accessible to everyone through tailored financing solutions.
             </p>
             <a
@@ -26,12 +26,12 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-primary mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/about" className="text-secondary/80 hover:text-primary">
+                <Link to="/about" className="text-dark/80 hover:text-primary">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/schedule" className="text-secondary/80 hover:text-primary">
+                <Link to="/schedule" className="text-dark/80 hover:text-primary">
                   Book an Appointment
                 </Link>
               </li>
@@ -40,7 +40,7 @@ const Footer = () => {
 
           <div>
             <h3 className="text-xl font-bold text-primary mb-4">Contact Us</h3>
-            <ul className="space-y-2 text-secondary/80">
+            <ul className="space-y-2 text-dark/80">
               <li>Email: info@carcreditpros.com</li>
               <li>Phone: (555) 123-4567</li>
               <li>Address: 123 Auto Finance Way</li>
@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-secondary/20 mt-8 pt-8 text-center text-secondary/60">
+        <div className="border-t border-gray-100 mt-8 pt-8 text-center text-dark/60">
           <p>&copy; {new Date().getFullYear()} Car Credit Pros. All rights reserved.</p>
         </div>
       </div>
