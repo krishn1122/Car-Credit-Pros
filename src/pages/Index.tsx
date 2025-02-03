@@ -30,7 +30,7 @@ const Index = () => {
             </p>
             <Button
               asChild
-              className="bg-primary text-secondary hover:bg-primary/90 text-lg px-8 py-6 animate-fade-in"
+              className="bg-primary text-darker hover:bg-primary/90 text-lg px-8 py-6 animate-fade-in font-jakarta"
             >
               <Link to="/schedule">Schedule Your Visit</Link>
             </Button>
@@ -73,29 +73,22 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-dark mb-8 text-center">About Car Credit Pros</h2>
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="space-y-6">
-                <p className="text-lg text-dark/80 leading-relaxed">
-                  At Car Credit Pros, we believe everyone deserves the opportunity to drive their dream car. Our mission is to make car ownership accessible through tailored financing solutions that work for your unique situation.
-                </p>
-                <p className="text-lg text-dark/80 leading-relaxed">
-                  With years of experience and a commitment to exceptional service, we've helped thousands of clients achieve their automotive dreams, regardless of their credit history.
-                </p>
+            <div className="space-y-6">
+              <p className="text-lg text-dark/80 leading-relaxed">
+                At Car Credit Pros, we believe everyone deserves the opportunity to drive their dream car. Our mission is to make car ownership accessible through tailored financing solutions that work for your unique situation.
+              </p>
+              <p className="text-lg text-dark/80 leading-relaxed">
+                With years of experience and a commitment to exceptional service, we've helped thousands of clients achieve their automotive dreams, regardless of their credit history.
+              </p>
+              <div className="text-center">
                 <Button
                   asChild
-                  className="bg-primary text-secondary hover:bg-primary/90"
+                  className="bg-primary text-darker hover:bg-primary/90 font-jakarta"
                 >
                   <Link to="/about" className="inline-flex items-center">
                     Read More <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
-              </div>
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=2073&auto=format&fit=crop"
-                  alt="Car dealership"
-                  className="w-full h-full object-cover"
-                />
               </div>
             </div>
           </div>
@@ -113,7 +106,7 @@ const Index = () => {
           </p>
           <Button
             asChild
-            className="bg-primary text-secondary hover:bg-primary/90 text-lg px-8 py-6"
+            className="bg-primary text-darker hover:bg-primary/90 text-lg px-8 py-6 font-jakarta"
           >
             <Link to="/schedule">Book Your Appointment Now</Link>
           </Button>

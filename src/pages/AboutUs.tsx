@@ -1,63 +1,80 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Shield, Users, Target, Award } from "lucide-react";
 
 const AboutUs = () => {
   return (
-    <div className="min-h-screen bg-secondary py-20">
+    <div className="min-h-screen bg-secondary pt-32 font-jakarta">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-dark mb-8 text-center">About Car Credit Pros</h1>
-        
-        <Card className="p-8 mb-12 bg-white shadow-lg">
-          <p className="text-lg text-dark mb-6">
-            At Car Credit Pros, we specialize in securing car loans for individuals with all types of credit histories—good, bad, or no credit. Our mission is to make car ownership accessible to everyone by providing tailored financing solutions. We pride ourselves on our expertise and commitment to helping clients navigate the car financing process with ease.
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <h1 className="text-5xl font-bold text-dark mb-6">About Car Credit Pros</h1>
+          <p className="text-xl text-dark/80">
+            Transforming the way people finance their dream cars through innovative solutions and exceptional service.
           </p>
-          
-          <h2 className="text-2xl font-bold text-primary mb-6">Why Choose Us</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-dark">Expertise</h3>
-              <p className="text-dark/80">
-                With years of experience in the automotive financing industry, our team has the knowledge and skills to secure the best deals for our clients.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-dark">Inclusive Approach</h3>
-              <p className="text-dark/80">
-                We believe that everyone deserves the opportunity to own a car, regardless of their credit history.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-dark">Customer-Centric Service</h3>
-              <p className="text-dark/80">
-                Our clients are our top priority. We work diligently to ensure a smooth and satisfying experience from start to finish.
-              </p>
-            </div>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-12 mb-20">
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold text-primary">Our Mission</h2>
+            <p className="text-lg text-dark/80 leading-relaxed">
+              At Car Credit Pros, we believe that everyone deserves the opportunity to own their dream car, regardless of their credit history. Our mission is to make car ownership accessible through personalized financing solutions that work for each individual's unique situation.
+            </p>
           </div>
-        </Card>
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold text-primary">Our Vision</h2>
+            <p className="text-lg text-dark/80 leading-relaxed">
+              We envision a future where credit barriers don't stand between people and their automotive dreams. Through innovative financing solutions and dedicated customer service, we're making this vision a reality, one satisfied customer at a time.
+            </p>
+          </div>
+        </div>
 
-        <Card className="p-8 bg-white shadow-lg">
-          <h2 className="text-2xl font-bold text-primary mb-6">Our Process</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-dark">Initial Consultation</h3>
-              <p className="text-dark/80">
-                Meet with our experts to discuss your financial situation and vehicle preferences.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-dark">Credit Assessment</h3>
-              <p className="text-dark/80">
-                We'll review your credit history and identify the best financing options available.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-dark">Vehicle Selection</h3>
-              <p className="text-dark/80">
-                Browse our selection of quality vehicles that match your budget and needs.
-              </p>
-            </div>
-          </div>
-        </Card>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+          {[
+            {
+              icon: <Shield className="w-12 h-12 text-primary" />,
+              title: "Trust & Integrity",
+              description: "Building lasting relationships through honest and transparent service",
+            },
+            {
+              icon: <Users className="w-12 h-12 text-primary" />,
+              title: "Customer First",
+              description: "Prioritizing your needs and delivering personalized solutions",
+            },
+            {
+              icon: <Target className="w-12 h-12 text-primary" />,
+              title: "Expert Guidance",
+              description: "Professional advice from experienced finance specialists",
+            },
+            {
+              icon: <Award className="w-12 h-12 text-primary" />,
+              title: "Excellence",
+              description: "Committed to delivering outstanding results for every client",
+            },
+          ].map((item, index) => (
+            <Card key={index} className="p-6 text-center bg-white shadow-sm">
+              <div className="flex justify-center mb-4">{item.icon}</div>
+              <h3 className="text-xl font-bold text-dark mb-2">{item.title}</h3>
+              <p className="text-dark/80">{item.description}</p>
+            </Card>
+          ))}
+        </div>
+
+        <div className="bg-white rounded-lg p-12 text-center mb-20">
+          <h2 className="text-3xl font-bold text-primary mb-6">Our Commitment</h2>
+          <p className="text-lg text-dark/80 leading-relaxed max-w-3xl mx-auto">
+            We're committed to providing exceptional service and support throughout your car financing journey. Our team of experts works tirelessly to secure the best possible terms for your loan, ensuring you drive away satisfied in your dream vehicle.
+          </p>
+        </div>
+
+        <div className="text-center pb-20">
+          <h2 className="text-3xl font-bold text-primary mb-6">Ready to Start Your Journey?</h2>
+          <Button
+            asChild
+            className="bg-primary text-darker hover:bg-primary/90 text-lg px-8 py-6"
+          >
+            <Link to="/schedule">Schedule a Consultation</Link>
+          </Button>
+        </div>
       </div>
     </div>
   );

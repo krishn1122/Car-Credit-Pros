@@ -21,7 +21,6 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
     { name: "Services", path: "/services" },
-    { name: "Schedule", path: "/schedule" },
   ];
 
   return (
@@ -42,7 +41,7 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-white hover:text-primary transition-colors ${
+                className={`text-secondary hover:text-primary transition-colors ${
                   location.pathname === link.path ? "text-primary font-semibold" : ""
                 }`}
               >
@@ -51,7 +50,7 @@ const Navbar = () => {
             ))}
             <Button
               asChild
-              className="bg-primary text-darker hover:bg-primary/90"
+              className="bg-primary text-darker hover:bg-primary/90 font-jakarta"
             >
               <Link to="/schedule">Book Appointment</Link>
             </Button>
@@ -59,7 +58,7 @@ const Navbar = () => {
 
           {/* Mobile Navigation Button */}
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-secondary"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -84,7 +83,7 @@ const Navbar = () => {
               ))}
               <Button
                 asChild
-                className="bg-primary text-darker hover:bg-primary/90 mx-4"
+                className="bg-primary text-darker hover:bg-primary/90 mx-4 font-jakarta"
               >
                 <Link to="/schedule" onClick={() => setIsOpen(false)}>
                   Book Appointment
