@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Shield, Users, Target, Award } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
