@@ -1,19 +1,28 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Shield, Users, Target, Award } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
     <div className="min-h-screen bg-secondary pt-32 font-jakarta">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h1 className="text-5xl font-bold text-dark mb-6">About Car Credit Pros</h1>
-          <p className="text-xl text-dark/80">
-            Transforming the way people finance their dream cars through innovative solutions and exceptional service.
-          </p>
+      <div 
+        className="relative bg-cover bg-center py-20 mb-16"
+        style={{
+          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/luxury-car.jpg')",
+          backgroundAttachment: "fixed"
+        }}
+      >
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-5xl font-bold text-white mb-6">About Car Credit Pros</h1>
+            <p className="text-xl text-white/90">
+              Transforming the way people finance their dream cars through innovative solutions and exceptional service.
+            </p>
+          </div>
         </div>
-        
+      </div>
+
+      <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 mb-20">
           <div className="space-y-6">
             <h2 className="text-3xl font-bold text-primary">Our Mission</h2>
@@ -65,16 +74,6 @@ const AboutUs = () => {
           <p className="text-lg text-dark/80 leading-relaxed max-w-3xl mx-auto">
             We're committed to providing exceptional service and support throughout your car financing journey. Our team of experts works tirelessly to secure the best possible terms for your loan, ensuring you drive away satisfied in your dream vehicle.
           </p>
-        </div>
-
-        <div className="text-center pb-20">
-          <h2 className="text-3xl font-bold text-primary mb-6">Ready to Start Your Journey?</h2>
-          <Button
-            asChild
-            className="bg-primary text-darker hover:bg-primary/90 text-lg px-8 py-6"
-          >
-            <Link to="/schedule">Schedule a Consultation</Link>
-          </Button>
         </div>
       </div>
     </div>
