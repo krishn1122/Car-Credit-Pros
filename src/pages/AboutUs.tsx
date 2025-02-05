@@ -7,33 +7,21 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen bg-secondary pt-32 font-jakarta">
       <div className="container mx-auto px-4">
-        {/* Hero Section with Car Background */}
-        <div className="relative mb-16 rounded-2xl overflow-hidden">
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ 
-              backgroundImage: "url('/luxury-car.jpg')", 
-              filter: "brightness(0.3)" 
-            }}
-          />
-          <div className="relative z-10 py-20 px-6 text-center">
-            <h1 className="text-5xl font-bold text-white mb-6 animate-fade-in">
-              About Car Credit Pros
-            </h1>
-            <p className="text-xl text-white/90 max-w-4xl mx-auto animate-slide-up">
-              Transforming the way people finance their dream cars through innovative solutions and exceptional service.
-            </p>
-          </div>
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <h1 className="text-5xl font-bold text-dark mb-6">About Car Credit Pros</h1>
+          <p className="text-xl text-dark/80">
+            Transforming the way people finance their dream cars through innovative solutions and exceptional service.
+          </p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 mb-20">
-          <div className="space-y-6 bg-white p-8 rounded-xl shadow-sm">
+          <div className="space-y-6">
             <h2 className="text-3xl font-bold text-primary">Our Mission</h2>
             <p className="text-lg text-dark/80 leading-relaxed">
               At Car Credit Pros, we believe that everyone deserves the opportunity to own their dream car, regardless of their credit history. Our mission is to make car ownership accessible through personalized financing solutions that work for each individual's unique situation.
             </p>
           </div>
-          <div className="space-y-6 bg-white p-8 rounded-xl shadow-sm">
+          <div className="space-y-6">
             <h2 className="text-3xl font-bold text-primary">Our Vision</h2>
             <p className="text-lg text-dark/80 leading-relaxed">
               We envision a future where credit barriers don't stand between people and their automotive dreams. Through innovative financing solutions and dedicated customer service, we're making this vision a reality, one satisfied customer at a time.
@@ -64,7 +52,7 @@ const AboutUs = () => {
               description: "Committed to delivering outstanding results for every client",
             },
           ].map((item, index) => (
-            <Card key={index} className="p-6 text-center bg-white hover:shadow-md transition-shadow duration-300">
+            <Card key={index} className="p-6 text-center bg-white shadow-sm">
               <div className="flex justify-center mb-4">{item.icon}</div>
               <h3 className="text-xl font-bold text-dark mb-2">{item.title}</h3>
               <p className="text-dark/80">{item.description}</p>

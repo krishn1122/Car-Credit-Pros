@@ -31,7 +31,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
-          <Link to="/" className={`text-2xl font-bold ${isScrolled ? 'text-primary' : 'text-primary'}`}>
+          <Link to="/" className="text-2xl font-bold text-primary">
             Car Credit Pros
           </Link>
 
@@ -41,22 +41,24 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`transition-colors ${
-                  isScrolled 
-                    ? 'text-dark hover:text-primary' 
-                    : 'text-white hover:text-primary'
-                } ${
+                className={`text-secondary hover:text-primary transition-colors ${
                   location.pathname === link.path ? "text-primary font-semibold" : ""
                 }`}
               >
                 {link.name}
               </Link>
             ))}
+            <Button
+              asChild
+              className="bg-primary text-darker hover:bg-primary/90 font-jakarta"
+            >
+              <Link to="/schedule">Book Appointment</Link>
+            </Button>
           </div>
 
           {/* Mobile Navigation Button */}
           <button
-            className={`md:hidden ${isScrolled ? 'text-dark' : 'text-white'}`}
+            className="md:hidden text-secondary"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -79,6 +81,14 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
+              <Button
+                asChild
+                className="bg-primary text-darker hover:bg-primary/90 mx-4 font-jakarta"
+              >
+                <Link to="/schedule" onClick={() => setIsOpen(false)}>
+                  Book Appointment
+                </Link>
+              </Button>
             </div>
           </div>
         )}
