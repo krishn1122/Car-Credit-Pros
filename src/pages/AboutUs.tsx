@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Shield, Users, Target, Award } from "lucide-react";
@@ -6,16 +7,20 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen bg-secondary pt-32 font-jakarta">
       <div 
-        className="relative bg-cover bg-center py-20 mb-16"
+        className="relative bg-cover bg-center py-32 mb-16"
         style={{
-          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/luxury-car.jpg')",
-          backgroundAttachment: "fixed"
+          backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070')",
+          backgroundAttachment: "fixed",
+          height: "70vh",
+          display: "flex",
+          alignItems: "center",
+          position: "relative"
         }}
       >
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-white mb-6">About Car Credit Pros</h1>
-            <p className="text-xl text-white/90">
+            <h1 className="text-6xl font-bold text-white mb-8 animate-slide-up">About Car Credit Pros</h1>
+            <p className="text-xl text-white leading-relaxed max-w-3xl mx-auto animate-fade-in">
               Transforming the way people finance their dream cars through innovative solutions and exceptional service.
             </p>
           </div>
