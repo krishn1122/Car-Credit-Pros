@@ -158,13 +158,6 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contact & Support
-
-- **Website**: [Car Credit Pros](https://your-domain.com)
-- **Email**: info@carcreditpros.com
-- **Phone**: (555) 123-4567
-- **Instagram**: [@carcreditpros](https://www.instagram.com/carcreditpros/)
-
 ## 🙏 Acknowledgments
 
 - Built with [Vite](https://vitejs.dev/)
@@ -172,6 +165,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Icons by [Lucide](https://lucide.dev/)
 - Images from [Unsplash](https://unsplash.com/)
 
----
-
-**Made with ❤️ for accessible car financing**
