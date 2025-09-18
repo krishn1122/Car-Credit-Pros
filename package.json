@@ -1,8 +1,20 @@
 {
-  "name": "vite_react_shadcn_ts",
-  "private": true,
-  "version": "0.0.0",
+  "name": "car-credit-pros",
+  "private": false,
+  "version": "1.0.0",
+  "description": "A modern car financing platform that helps customers with all credit types secure vehicle financing",
   "type": "module",
+  "keywords": ["car-financing", "credit", "automotive", "react", "typescript", "vite"],
+  "author": "Car Credit Pros",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/car-credit-pros.git"
+  },
+  "homepage": "https://github.com/your-username/car-credit-pros#readme",
+  "bugs": {
+    "url": "https://github.com/your-username/car-credit-pros/issues"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
